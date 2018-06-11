@@ -1,0 +1,129 @@
+ {% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Snapshot by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>士林夜市 </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href= "{% static 'css/main.css' %}" />
+	</head>
+	<body>
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="/home/"><span class="icon fa-home"></span></a></li>
+						<li><a href="/home/gallery" class="active"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="/home/generic"><span class="icon fa-car"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+					
+					<!-- Header -->
+						<header id="header">
+							<div><a href="http://127.0.0.1:8000/home/contact" style="color:black;">聯絡我們</a></div> 
+							<!-- 還沒改 -->
+						</header>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+
+									<!-- Filters -->
+										<header>
+											<h1>士林夜市</h1>
+											<ul class="tabs">
+												<li><a href="/home/gallery" data-tag="all" class="button">All</a></li>
+												<li><a href="/home/gallery/a1" data-tag="通化夜市" class="button">通化夜市</a></li>
+												<li><a href="/home/gallery/a2" data-tag="士林夜市" class="button active">士林夜市</a></li>
+												<li><a href="/home/gallery/a3" data-tag="737夜市" class="button">737夜市</a></li>
+												<li><a href="/home/gallery/a4" data-tag="饒河夜市" class="button">饒河夜市</a></li>
+												<li><a href="/home/gallery/a5" data-tag="師大夜市" class="button">師大夜市</a></li>
+												<li><a href="/home/gallery/a6" data-tag="華西街夜市" class="button">華西街夜市</a></li>
+												<li><a href="/home/gallery/a7" data-tag="寧夏夜市" class="button">寧夏夜市</a></li>
+											</ul>
+										</header>
+									<div class="inner">
+						<section class="columns double">
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A2-01.jpg' %}" width="400" height="200" ></span>
+										<h3>忠誠號蚵仔煎</h3>
+												<p>忠誠號是士林夜市最有名的蚵仔煎代表店，而且餐點種類較多，想要吃多樣化小吃的朋友也可以來照訪。</p>
+												<p>營業時間：11：00-02：00</p>
+												<p>地點：台北市士林夜市新士林市場地下一樓美食區</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A2-02.jpg' %}" width="200" height="200" ></span>
+										<h3>士林豪大大雞排</h3>
+										<p>豪大大雞排的特色是很大一塊，甚至比臉還要大，有名到連日本的模型之神-山田卓司都以豪大為主題。</p>
+												<p>營業時間：16:30-01:30</p>
+												<p>地點：台北市士林區基河路115號（基河路士林夜市新市場旁）</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A2-03.jpg' %}" width="200" height="200" ></span>
+										<h3>新竹家鄉碳烤雞排</h3>
+										<p>最大也最特別的賣點是店家的雞排作法為先炸後烤，配上含特殊中藥的特調醬汁，有另一種不同的口感，值得大家前來購買。</p>
+												<p>營業時間：15:30–24:00</p>
+												<p>地點：台北市士林區基河路1號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A2-04.jpg' %}" width="200" height="200" ></span>
+										<h3>郭家蔥油餅</h3>
+										<p>這家老字號的郭家蔥油餅是人龍頗長的熱門小吃，炸法其實有點像是花蓮的炸蛋蔥油餅，吃起來特別酥脆，是一家CP直很高的店家。</p>
+												<p>營業時間：17:00-24:00</p>
+												<p>地點：臺北市松山區八德路四段與松河街間且與之平行的饒河街上</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A2-05.jpg' %}" width="200" height="200" ></span>
+										<h3>阿亮麵線</h3>
+										<p>這家好吃的阿亮麵線就在士林夜市的慈誠宮前，創立至今已經 40 多個年頭了，依然是士林夜市人氣美食排行榜前幾名。</p>
+												<p>營業時間：15:30–24:00</p>
+												<p>地點：台北市士林區大南路84號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A2-06.jpg' %}" width="200" height="200" ></span>
+										<h3>蕭記碳烤肉捲</h3>
+										<p>士林夜市老字號小吃之一，而這間肉捲在燒烤時的香氣四溢，裡面包了滿滿的蔥，經過很難不被吸引。</p>
+												<p>營業時間：17:30-24:00</p>
+												<p>地點：台北市士林區大東路與大南路口</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A2-07.jpg' %}" width="200" height="200" ></span>
+										<h3>家湘涼麵（家鄉涼麵）</h3>
+										<p>位在大南路慈誠宮附近，無論何時前往都排隊排超長的人氣名店！以臭豆腐和泰式酸辣涼麵聞名遐邇，座位不算多，店面總是人山人海。</p>
+												<p>營業時間：16:00-24:00</p>
+												<p>地點：台北市士林區大南路46號 </p>
+									</div>
+								</section>
+						</div>
+
+
+							
+						</section>
+		
+
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<!-- <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.poptrox.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/skel.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/util.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/main.js' %}"></script> -->
+
+
+	</body>
+</html>

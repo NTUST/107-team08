@@ -1,0 +1,76 @@
+ {% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Snapshot by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>捷運站ㄏㄏ</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href= "{% static 'css/main.css' %}" />
+	</head>
+	<body>
+		<div class="page-wrap">
+			<nav id="nav">
+					<ul>
+						<li><a href="/home/"><span class="icon fa-home"></span></a></li>
+						<li><a href="/home/gallery"> <span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="/home/generic" class="active"><span class="icon fa-car"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+
+					<!-- Header -->
+						
+					<!-- Header -->
+						<div style="background-color: white">
+							<form action="" method="post"  align="center"> 
+												{% csrf_token %}
+													<img src="{% static 'images/pictures/contact.jpg' %}"  alt="" width="500px" title=" 通化夜市也就是臨江街夜市唷！不要以為是不一樣的！" style="display:block; margin:auto;"/>
+
+												<h3>留下你的名字和你想對我們說的話</h3>
+													<h6><S>拜託啦 求你快點留言啦QQ</S></h6>
+												</h1>
+											<label style="padding: 20px 300px 0px 300px ;">	
+												<span>你的名字:</span>
+												<input id="name" type="text" name="name" placeholder="喵喵喵喵喵喵喵喵喵" style="text-align: center;"/>
+											</label>
+
+
+											<label style="padding: 20px 300px 0px 300px">
+												<span>想對我們說什麼呢？:</span>
+												<textarea id="message" name="message" placeholder="喵喵喵喵喵喵喵喵喵"  style="padding: 50px; text-align: center;"></textarea>
+											</label>
+											<label>
+												<span>&nbsp;</span>
+												<input type="submit" class="button" value="Send" />
+											</label>
+							</form>
+							<!-- 還沒改 -->
+						<div>
+						
+					
+						<header id="header">
+							<div style="text-align:center;"><a href="/home/" style="color:black;">回首頁</a></div>
+						</header>	
+					<!-- Footer -->
+						
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

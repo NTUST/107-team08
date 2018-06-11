@@ -1,0 +1,125 @@
+ {% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Snapshot by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>師大夜市</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href= "{% static 'css/main.css' %}" />
+	</head>
+	<body>
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="/home/"><span class="icon fa-home"></span></a></li>
+						<li><a href="/home/gallery" class="active"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="/home/generic"><span class="icon fa-car"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+					
+					<!-- Header -->
+						<header id="header">
+							<div><a href="http://127.0.0.1:8000/home/contact" style="color:black;">聯絡我們</a></div> 
+							<!-- 還沒改 -->
+						</header>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+
+									<!-- Filters -->
+										<header>
+											<h1>師大夜市</h1>
+											<ul class="tabs">
+												<li><a href="/home/gallery" data-tag="all" class="button">All</a></li>
+												<li><a href="/home/gallery/a1" data-tag="通化夜市" class="button">通化夜市</a></li>
+												<li><a href="/home/gallery/a2" data-tag="士林夜市" class="button">士林夜市</a></li>
+												<li><a href="/home/gallery/a3" data-tag="737夜市" class="button">737夜市</a></li>
+												<li><a href="/home/gallery/a4" data-tag="饒河夜市" class="button">饒河夜市</a></li>
+												<li><a href="/home/gallery/a5" data-tag="師大夜市" class="button active">師大夜市</a></li>
+												<li><a href="/home/gallery/a6" data-tag="華西街夜市" class="button">華西街夜市</a></li>
+												<li><a href="/home/gallery/a7" data-tag="寧夏夜市" class="button">寧夏夜市</a></li>
+											</ul>
+										</header>
+									<div class="inner">
+						<section class="columns double">
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A5-01.jpg' %}" width="400" height="200" ></span>
+										<h3>Angel義式手工冰淇淋店</h3>
+										<p>哇~義式手作冰淇淋口味真多。每天Angel店裡只會新鮮限量製作6~7種口味喔,尤其是『水果口味』是一大早到市場親選當季好吃水果來製作Gelato</p>
+												<p>營業時間：04:00~21:30(休:星期一)
+
+</p>
+												<p>地點：台北市泰順街50巷27號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A5-02.jpg' %}" width="200" height="200" ></span>
+										<h3>米克諾斯</h3>
+										<p>位在師大商圈內，店內裝潢濃濃地中海風情，彷彿到了希腦的錯覺。米克諾斯其實是希臘愛琴海一座小島的名稱，在這藍白相間的地中海餐廳內用餐~挺特別der</p>
+												<p>營業時間：(平日)11:30~15:00：16:30~21:30(假日)11:30~21:30   (最後出餐時間21:00)</p>
+												<p>地點：台北市大安區泰順街38巷32號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A5-03.jpg' %}" width="200" height="200" ></span>
+										<h3>小貓飾品</h3>
+										<p>其實師大夜市除了吃的啊 很多賣飾品衣服的地方！老闆娘待客親切又和藹,愛美的人來這裡可要小心你的荷包了啊！</p>
+												<p>營業時間：15:00~23:00</p>
+												<p>地點：台北市大安區龍泉街23號 </p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A5-04.jpg' %}" width="200" height="200" ></span>
+										<h3>許記生煎包</h3>
+										<p>「許記生煎包」這間小攤販在師大開了非常多年,是每個人來訪師大夜市必吃的好料！而且是現包現煎的～原味就好棒了,依各人口味之不同,適量加點醬油辣椒也是很主流的方法</p>
+												<p>營業時間：15:00~23:00(月休兩日,多為週一或週二)</p>
+												<p>地點：台北市師大路59巷9-3號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A5-05.jpg' %}" width="200" height="200" ></span>
+										<h3>好雞匯鹽水雞</h3>
+										<p>老闆人好大方又親切，去骨技巧純熟不會吃到骨頭，看老闆料理很像在表演特技，口味也依個人調整，大大大力推薦！！</p>
+												<p>營業時間：16:30 - 00:00</p>
+												<p>地點：台灣台北市大安區師大路45-2號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A5-06.jpg' %}" width="200" height="200" ></span>
+										<h3>樂芙車輪餅</h3>
+										<p>芋頭餡~滑嫩可口。滿嘴芋香，樂芙的車輪餅都是低糖味蕾不用擔心會太甜,用料真的很實在,和傳統紅豆餅最大的不同就是皮薄脆、內餡多,且內餡都是店家純手工熬煮、自製、不加防腐劑</p>
+												<p>營業時間：13:00~22:00(公休日不一定/請電洽詢問)</p>
+												<p>地點：台北市大安區師大路133號</p>
+									</div>
+									
+								</section>
+						</div>
+
+
+							
+						</section>
+		
+
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<!-- <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.poptrox.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/skel.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/util.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/main.js' %}"></script> -->
+
+
+	</body>
+</html>

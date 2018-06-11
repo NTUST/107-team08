@@ -1,0 +1,123 @@
+ {% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Snapshot by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>夜市介紹 </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href= "{% static 'css/main.css' %}" />
+	</head>
+	<body>
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="/home/"><span class="icon fa-home"></span></a></li>
+						<li><a href="/home/gallery" class="active"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="/home/generic"><span class="icon fa-car"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+					
+					<!-- Header -->
+						<header id="header">
+							<div><a href="http://127.0.0.1:8000/home/contact" style="color:black;">聯絡我們</a></div> 
+							<!-- 還沒改 -->
+						</header>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+
+									<!-- Filters -->
+										<header>
+											<h1>737夜市</h1>
+											<ul class="tabs">
+												<li><a href="/home/gallery" data-tag="all" class="button">All</a></li>
+												<li><a href="/home/gallery/a1" data-tag="通化夜市" class="button">通化夜市</a></li>
+												<li><a href="/home/gallery/a2" data-tag="士林夜市" class="button">士林夜市</a></li>
+												<li><a href="/home/gallery/a3" data-tag="737夜市" class="button active">737夜市</a></li>
+												<li><a href="/home/gallery/a4" data-tag="饒河夜市" class="button">饒河夜市</a></li>
+												<li><a href="/home/gallery/a5" data-tag="師大夜市" class="button">師大夜市</a></li>
+												<li><a href="/home/gallery/a6" data-tag="華西街夜市" class="button">華西街夜市</a></li>
+												<li><a href="/home/gallery/a7" data-tag="寧夏夜市" class="button">寧夏夜市</a></li>
+											</ul>
+										</header>
+									<div class="inner">
+						<section class="columns double">
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A3-01.jpg' %}" width="400" height="200" ></span>
+										<h3>大陳記麵店</h3>
+												<p>創始1989年迄今約29年，就以老店為名，特色是用客家蔥調味、不加味精的方式，呈現自家的特色。</p>
+												<p>營業時間：08:00~15:30 ／ 16:30~23:00 </p>
+												<p>地點：台北市內湖區內湖路一段737巷18號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A3-02.jpg' %}" width="200" height="200" ></span>
+										<h3>台灣第一家鹽酥雞</h3>
+										<p>台灣第一家鹹酥雞沾醬雞排位於內湖737巷的21號的正前方，整體是比較傳統派的裹粉和油炸手法，咬起來有種過癮的感覺，也不會過於死鹹和過油，有機會可以來試試。</p>
+												<p>營業時間：16:30 ~ 23:30 </p>
+												<p>地點：台北市內湖區內湖路一段737巷29號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A3-03.jpg' %}" width="200" height="200" ></span>
+										<h3>豬大郎豬血糕</h3>
+										<p>這間豬血糕在737夜市非常有名，每次要買都要排隊，在用料上完全不手軟，難怪名聲這麼響亮</p>
+												<p>營業時間：14:30 ~ 23:00</p>
+												<p>地點：台北市內湖區內湖路一段737巷79號 </p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A3-04.jpg' %}" width="200" height="200" ></span>
+										<h3>居和熹</h3>
+										<p>在地朋友應該無人不知的美食小吃，從小攤販做到店面，特別的是小籠湯包的皮較厚些，吃起來很有嚼勁，難怪會給大家留下很好的印象。</p>
+												<p>營業時間：11:00~14:00\17:00~20:00 </p>
+												<p>地點：台北市內湖區內湖路一段737巷71號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A3-05.jpg' %}" width="200" height="200" ></span>
+										<h3>醬老大鐵板燒卦包</h3>
+										<p>在737夜市美食之一，別於傳統包子夾著焢肉，而是使用獨門醬汁與豬五花、雞腿肉、牛五花等在鐵板上快炒, 吃起來跟一般不一樣，難怪這是在737夜市必點美食。</p>
+												<p>營業時間：17:00–23:00</p>
+												<p>地點：台北市內湖路一段737巷21號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A3-06.jpg' %}" width="200" height="200" ></span>
+										<h3>手工檸檬愛玉</h3>
+										<p>這家手工檸檬愛玉也是排隊的人潮店之一，而且不管點什麼，都以加量不加價的方式，促使顧客再次上門。</p>
+												<p>營業時間：17:30~22:30</p>
+												<p>地點：台北市內湖路一段737巷57號前</p>
+									</div>
+									
+								</section>
+						</div>
+
+
+							
+						</section>
+		
+
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<!-- <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.poptrox.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/skel.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/util.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/main.js' %}"></script> -->
+
+
+	</body>
+</html>

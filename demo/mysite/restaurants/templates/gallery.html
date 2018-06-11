@@ -1,0 +1,179 @@
+ {% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Snapshot by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>夜市介紹 </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href= "{% static 'css/main.css' %}" />
+	</head>
+	<body>
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						
+						<li><a href="/home/"><span class="icon fa-home"></span></a></li>
+						<li><a href="/home/gallery" class="active"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="/home/generic"><span class="icon fa-camera-retro"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+					
+					<!-- Header -->
+						<header id="header">
+							<div><a href="http://127.0.0.1:8000/home/contact" style="color:black;">聯絡我們</a></div> 
+							<!-- 還沒改 -->
+						</header>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+
+									<!-- Filters -->
+										<header>
+											<h1>夜市介紹</h1>
+											<ul class="tabs">
+												<li><a href="/home/gallery" data-tag="all" class="button active">All</a></li>
+												<li><a href="/home/gallery/a1" data-tag="通化夜市" class="button">通化夜市</a></li>
+												<li><a href="/home/gallery/a2" data-tag="士林夜市" class="button">士林夜市</a></li>
+												<li><a href="/home/gallery/a3" data-tag="737夜市" class="button">737夜市</a></li>
+												<li><a href="/home/gallery/a4" data-tag="饒河夜市" class="button">饒河夜市</a></li>
+												<li><a href="/home/gallery/a5" data-tag="師大夜市" class="button">師大夜市</a></li>
+												<li><a href="/home/gallery/a6" data-tag="華西街夜市" class="button">華西街夜市</a></li>
+												<li><a href="/home/gallery/a7" data-tag="寧夏夜市" class="button">寧夏夜市</a></li>
+											</ul>
+										</header>
+									<div class="inner">
+						<section class="columns double">
+									<div class="column">
+										<span class="image left special"><a href="a1"><img src="{% static 'images/pictures/01.jpg' %}" width="400" height="200" ></a></span>
+										<h3>通化夜市</h3>
+												<p>夜市位在大安區的住宅區裡，是台北市少數合法掛牌設立的夜市，周邊還有許多中、西式家具店。</p>
+												<p>營業時間：18:00-24:00</p>
+												<p>地點：台北市大安區臨江街</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><a href="a2"><img src="{% static 'images/pictures/02.jpg' %}" width="200" height="200" ></a></span>
+										<h3>士林夜市</h3>
+										<p>集合大江南北小吃，包括西式牛排、鐵板燒、大餅包小餅、刀削麵等，是觀光客必到的夜市之ㄧ。</p>
+												<p>營業時間：11:00-02:00</p>
+												<p>地點：臺北市 士林區 大東路、大南路、文林路、基河路間與週邊</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><a href="a3"><img src="{% static 'images/pictures/03.jpg' %}" width="200" height="200" ></a></span>
+										<h3>737夜市</h3>
+										<p>內湖７３７商圈，可謂是內湖很具盛名的一條美食巷。</p>
+												<p>營業時間：08:00–23:00</p>
+												<p>地點：台北市內湖路一段７３７巷</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><a href="a4"><img src="{% static 'images/pictures/04.jpg' %}" width="200" height="200" ></a></span>
+										<h3>饒河夜市</h3>
+										<p>臺北第一座觀光夜市，全長約600公尺，有多家藥燉排骨，是寒冬進補的好選擇。</p>
+												<p>營業時間：17:00-24:00</p>
+												<p>地點：臺北市松山區八德路四段與松河街間且與之平行的饒河街上</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><a href="a5"><img src="{% static 'images/pictures/05.jpg' %}" width="200" height="200" ></a></span>
+										<h3>師大夜市</h3>
+										<p>位於台北大安區龍泉里上的師大夜市，因為小吃美食與服飾配件的店家數量多，因此名聲響亮的程度可是不輸士林夜市唷！</p>
+												<p>營業時間：10:00–24:00</p>
+												<p>地點：台北市大安區師大路39巷</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><a href="a6"><img src="{% static 'images/pictures/06.jpg' %}" width="200" height="200" ></a></span>
+										<h3>華西街夜市</h3>
+										<p>臺灣最著名的觀光夜市，吸引不少國內外人士前來觀光，有名的小吃包括蛇肉與蛇酒、鼎邊趖、碗粿、鱉肉、海鮮等。</p>
+												<p>營業時間：16:00-24:00</p>
+												<p>地點：臺北市萬華區華西街(位於貴陽街與廣州街間)</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><a href="a7"><img src="{% static 'images/pictures/07.jpg' %}" width="200" height="200" ></a></span>
+										<h3>寧夏夜市</h3>
+										<p>以臺灣傳統小吃為主，夜市首先將人車分道，方便民眾吃飯、購物及貼心的服務，也是吸引大家來這裡消費的原因。</p>
+												<p>營業時間：18:00-24:00</p>
+												<p>地點：臺北市大同區寧夏路(位於南京西路與民生西路間)</p>
+									</div>
+								</section>
+						</div>
+
+
+							
+						</section>
+		
+					<!-- Contact -->
+						<section id="contact">
+							<!-- Social -->
+								<div class="social column">
+									<h3>研究動機</h3>
+									<p>　　想說台北那麼大而且又有方便的捷運，那就把附近的夜市都統整起來，就不用擔心跟男/女朋友不知道去哪裡的窘境。
+									       我們整理出來台北的夜市，讓你可以依照自己行程去安排想排入哪個夜市去逛！
+</p>
+									<p>　　此篇決定是自由行的好幫手，不用怕不知道去哪，準備一個網頁就可以玩透台北，只要看完以下的介紹和交通攻略，保證你很快就可以安排好行程
+</h3>
+									
+								</div>
+
+							<!-- Form -->
+								<div class="column">
+
+									<form action="" method="post"  align="center"> 
+												{% csrf_token %}
+												<h3>為夜市留下評論吧！</h3>
+											<label>	
+												<span>你ㄉ名字：</span>
+												<input id="name" type="text" name="name" placeholder="Your Full Name" />
+											</label>
+											<label>
+											<span>選擇夜市</span><select name="selection">
+											<option value="饒河夜市">饒河夜市</option>
+											<option value="士林夜市">士林夜市</option>
+											<option value="臨江街夜市">臨江街夜市</option>
+											<option value="師大夜市">師大夜市</option>
+											<option value="寧夏夜市">寧夏夜市</option>
+											<option value="華西街夜市">華西街夜市</option>
+											<option value="737夜市">737夜市</option>
+											</select>
+											</label>
+											<label>
+												<span>覺得這個夜市怎麼樣？:</span>
+												<textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
+											</label>
+											<label>
+												<span>&nbsp;</span>
+												<input type="submit" class="button" value="Send" />
+											</label>
+											</form>
+							<!-- 還沒改 -->
+								</div>
+
+						</section>
+
+					<!-- Footer -->
+						
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<!-- <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.poptrox.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/skel.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/util.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/main.js' %}"></script> -->
+
+
+	</body>
+</html>

@@ -1,0 +1,125 @@
+ {% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Snapshot by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>華西街夜市</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href= "{% static 'css/main.css' %}" />
+	</head>
+	<body>
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="/home/"><span class="icon fa-home"></span></a></li>
+						<li><a href="/home/gallery" class="active"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="/home/generic"><span class="icon fa-car"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+					
+					<!-- Header -->
+						<header id="header">
+							<div><a href="http://127.0.0.1:8000/home/contact" style="color:black;">聯絡我們</a></div> 
+							<!-- 還沒改 -->
+						</header>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+
+									<!-- Filters -->
+										<header>
+											<h1>華西街夜市</h1>
+											<ul class="tabs">
+												<li><a href="/home/gallery" data-tag="all" class="button">All</a></li>
+												<li><a href="/home/gallery/a1" data-tag="通化夜市" class="button">通化夜市</a></li>
+												<li><a href="/home/gallery/a2" data-tag="士林夜市" class="button">士林夜市</a></li>
+												<li><a href="/home/gallery/a3" data-tag="737夜市" class="button">737夜市</a></li>
+												<li><a href="/home/gallery/a4" data-tag="饒河夜市" class="button">饒河夜市</a></li>
+												<li><a href="/home/gallery/a5" data-tag="師大夜市" class="button">師大夜市</a></li>
+												<li><a href="/home/gallery/a6" data-tag="華西街夜市" class="button active">華西街夜市</a></li>
+												<li><a href="/home/gallery/a7" data-tag="寧夏夜市" class="button">寧夏夜市</a></li>
+											</ul>
+										</header>
+									<div class="inner">
+						<section class="columns double">
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A6-01.jpg' %}" width="400" height="200" ></span>
+										<h3>小王清湯魯肉飯 since 1975</h3>
+										<p>創立1975年的小王清湯瓜仔肉，屬於白天限定美食，店內人潮不管中午與晚上用餐時段總是最多人。採用肥肉與豬皮部位的切丁滷肉，滷肉湯汁熬煮到發黑被稱之為“黑金滷肉飯” 。甜而不膩的清湯瓜仔肉，同樣是古早味的做法，與滷肉飯同為必點美食</p>
+												<p>營業時間：09:00-20:00 週二公休
+
+</p>
+												<p>地點：台北市萬華區華西街17-4號(153號攤）</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A6-02.jpg' %}" width="200" height="200" ></span>
+										<h3>阿猜嬤甜湯鹹圓 since 1965</h3>
+										<p>「1965年開賣至今的阿猜嬤由第二代柯老闆接手，賣的是最簡單的紅豆湯、花生湯、湯圓、米糕粥與冰糖白木耳蓮子。每樣甜品堅持古早味作法，特別的甜湯配椪餅更是台北少見的搭配。簡單溫暖的滋味非常適合寒冬來上一碗甜湯。</p>
+												<p>營業時間：夏天 15:30-21:30 / 冬天 15:00-22:00 / 每周四公休</p>
+												<p>地點：台北市萬華區華西街3號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A6-03.jpg' %}" width="200" height="200" ></span>
+										<h3>壽司王</h3>
+										<p>壽司王經營接近一甲子，目前是第二代老闆王銘仁，雖然招牌打的是大大的壽司王三個字，關東煮卻比壽司更有名氣，關東煮配上壽司，或是配味噌湯，當作稍微奢侈的一餐還不賴，口味偏像老台式，大概不是時下年輕人口味，卻很對我的胃啊。</p>
+												<p>營業時間：12:00–21:45（禮拜三禮拜四公休）</p>
+												<p>地點：台北市萬華區華西街17之3號 （157號攤） </p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A6-04.jpg' %}" width="200" height="200" ></span>
+										<h3>昶鴻麵點 since 1954</h3>
+										<p>開店超過一甲子的昶鴻麵點，目前由第二代夫妻經營，第二代許澤雄1000多度的近視，及暴牙標誌，人喚「七先生」，研發出招牌的「菊花肉麵」和「豬尾麵」。切片後，軟筋膠質豐富，看似花瓣，肉質清甜，搭配老薑大骨湯頭油麵，以及自製油蔥，天氣雖熱，但湯頭喝起來溫潤回甘，散發濃濃古早味。</p>
+												<p>營業時間：11:45-21:00</p>
+												<p>地點：台台北市萬華區華西街15號(171攤)</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A6-05.jpg' %}" width="200" height="200" ></span>
+										<h3>天天生炒牛肉 since 1939</h3>
+										<p>雖然價格在華西街夜市中屬於中上，但品質與炒功無可挑惕，擁有充滿鑊氣與獨家沙茶的炒飯炒麵與炒盤，再配上台北少有的牛肉湯，可說是無可挑惕的宵夜。千萬別跟對面的夜夜生搞混了。</p>
+												<p>營業時間：11:00-00:00（每個月隔周周一固定公休）</p>
+												<p>地點：台北市萬華區華西街19之5</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A6-06.jpg' %}" width="200" height="200" ></span>
+										<h3>珍果冰果室 since 1970</h3>
+										<p>華西街珍果冰果室，還維持著傳統的冰品樣貌，而且價錢也沒有隨著物價高漲。所以當台北芒果冰都破百到兩百多的時候，珍果冰果室還賣著一百元的芒果牛奶冰除了芒果冰外、水果冰、紅豆冰與綠豆冰都是很便宜的選擇，連南部人愛吃的薑汁蕃茄都有。</p>
+												<p>營業時間：15:00~01:00 每月不定休2日</p>
+												<p>地點：台北市萬華區華西街、桂林路口（攤位113號）</p>
+									</div>
+									
+								</section>
+						</div>
+
+
+							
+						</section>
+		
+
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<!-- <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.poptrox.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/skel.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/util.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/main.js' %}"></script> -->
+
+
+	</body>
+</html>

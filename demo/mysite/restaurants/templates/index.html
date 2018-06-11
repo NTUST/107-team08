@@ -1,0 +1,148 @@
+ {% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Snapshot by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>鄰近捷運站ㄉ夜市</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href= "{% static 'css/main.css' %}" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="/home/" class="active"><span class="icon fa-home"></span></a></li>
+						<li><a href="/home/gallery/"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="/home/generic"><span class="icon fa-car"></span></a></li>
+						
+					</ul>
+				</nav>
+
+			<!-- Main -->
+
+
+				<section id="main">
+					<header id="header">
+							<div><a href="/home/contact" style="color:black;">聯絡我們</a></div>
+						</header>
+					<!-- Banner -->
+						<section id="banner">
+							<div class="inner">
+								<h1><span style="color:yellow;">捷運站附近ㄉ夜市喲</span></h1>
+								<p>我：「老闆,來一份<strong><span style="color:orange;">普羅旺斯鮮蚵青蔬佐滑蛋</span></strong>」</p>
+								<p>老闆：「那是什麼？」</p>
+								<p>我：「歐,是<img src="{% static 'images/pictures/1234.jpg' %}" width="200" alt=""/>啦ㄏㄏ」 </p>
+								<ul class="actions">
+									<li><a href="#galleries" class="button alt scrolly big">滑起來</a></li>
+								</ul>
+							</div>
+						</section>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery" style="background-color:#FFD382">
+									<header class="special">
+										<h2>捷運站附近有哪些夜市呢：</h2>
+									</header>
+									<div class="content">
+												<!-- ////////////////////////////// -->
+										<div class="media">
+											<a href="{% static 'images/pictures/01_traffic.jpg' %}"><img src="{% static 'images/pictures/01.jpg' %}"  alt="" title="通化夜市也就是臨江街夜市唷！不要以為是不一樣的！" /></a>
+										</div>
+										<!-- ////////////////////////////// -->
+												<!-- ////////////////////////////// -->
+										<div class="media">
+											<a href="{% static 'images/pictures/02_traffic.jpg' %}"><img src="{% static 'images/pictures/02.jpg' %}"  alt="" title="劍潭站比士林站更熱鬧，建議從劍潭站開始逛起呦" /></a>
+										</div>
+										<!-- ////////////////////////////// -->
+												<!-- ////////////////////////////// -->
+										<div class="media">
+											<a href="{% static 'images/pictures/03_traffic.jpg' %}"><img src="{% static 'images/pictures/03.jpg' %}"  alt="" title="其實很多人不知道在內湖也有一個非常熱鬧的小夜市~" /></a>
+										</div>
+										<!-- ////////////////////////////// -->
+												<!-- ////////////////////////////// -->
+										<div class="media">
+											<a href="{% static 'images/pictures/04_traffic.jpg' %}"><img src="{% static 'images/pictures/04.jpg' %}"  alt="" title="饒河夜市旁有個彩虹橋，非常適合情侶逛完夜市後去欣賞夜景~" /></a>
+										</div>
+										<!-- ////////////////////////////// -->
+												<!-- ////////////////////////////// -->
+										<div class="media">
+											<a href="{% static 'images/pictures/05_traffic.jpg' %}"><img src="{% static 'images/pictures/05.jpg' %}"  alt="" title="師大夜市為 (衣服、包包、鞋子)店居多，美食比較少 吃或別跑錯地方啦～" /></a>
+										</div>
+										<!-- ////////////////////////////// -->
+												<!-- ////////////////////////////// -->
+										<div class="media">
+											<a href="{% static 'images/pictures/06_traffic.jpg' %}"><img src="{% static 'images/pictures/06.jpg' %}"  alt="" title="華西街比較特別，裡面較多的都是按摩跟蛇店。這裡的足體按摩也很有口碑唷！" /></a>
+										</div>
+										<!-- ////////////////////////////// -->
+												<!-- ////////////////////////////// -->
+										<div class="media">
+											<a href="{% static 'images/pictures/07_traffic.jpg' %}"><img src="{% static 'images/pictures/07.jpg' %}"  alt="" title="寧夏夜市是有許多在地小吃與老字號小吃的地方，如果想品嘗道地台灣小吃，來這裡準沒錯！" /></a>
+										</div>
+										<!-- ////////////////////////////// -->
+												<!-- ////////////////////////////// -->
+										<div class="media">
+											<img src="{% static 'images/pictures/08.jpg' %}"  alt="" title="爽啦林北吃貨啦" /></a>
+										</div>
+										<!-- ////////////////////////////// -->
+									</div>
+									<!-- <footer>
+										<a href="gallery.html" class="button big">Full Gallery</a>
+									</footer> -->
+									
+									<style>
+								
+							.classA { background-color:white; 
+								float:left;
+								width:39%;
+								height:80%;
+								padding:10px 10px 10px 10px; margin:60px; 
+								text-align: center;;
+								}
+								
+
+							</style>
+						<div class="gallery" style="background-color:#FFD382">
+								<header class="special">
+									<h2>一些遊客ㄉ評論哦：</h2>
+								</header>
+						
+							{% for r in comment %}
+							<div class="classA">
+								<div style="font-size:20px">{{r.nightmarket_name}}</div>
+								<div"><img src="{% static 'images/pictures/user.jpeg' %}" width="100px" alt="" /><br><B>{{r.name}}</B>
+								
+								<div>{{r.message}}</div>
+
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+					<footer id="footer" style="background-color:#FFD382">
+							<div class="copyright" style="background-color:#FFD382">
+								<h4>喵喵~喵喵~喵喵~喵喵~喵喵~喵喵~喵喵~喵喵~</h4>
+							</div>
+						</footer>
+					</section>
+		</div>
+
+		<!-- Scripts -->
+			<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.poptrox.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/skel.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/util.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>

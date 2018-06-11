@@ -1,0 +1,123 @@
+ {% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Snapshot by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>寧夏夜市</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href= "{% static 'css/main.css' %}" />
+	</head>
+	<body>
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="/home/"><span class="icon fa-home"></span></a></li>
+						<li><a href="/home/gallery" class="active"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="/home/generic"><span class="icon fa-car"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+					
+					<!-- Header -->
+						<header id="header">
+							<div><a href="http://127.0.0.1:8000/home/contact" style="color:black;">聯絡我們</a></div> 
+							<!-- 還沒改 -->
+						</header>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+
+									<!-- Filters -->
+										<header>
+											<h1>寧夏夜市</h1>
+											<ul class="tabs">
+												<li><a href="/home/gallery" data-tag="all" class="button">All</a></li>
+												<li><a href="/home/gallery/a1" data-tag="通化夜市" class="button">通化夜市</a></li>
+												<li><a href="/home/gallery/a2" data-tag="士林夜市" class="button">士林夜市</a></li>
+												<li><a href="/home/gallery/a3" data-tag="737夜市" class="button">737夜市</a></li>
+												<li><a href="/home/gallery/a4" data-tag="饒河夜市" class="button">饒河夜市</a></li>
+												<li><a href="/home/gallery/a5" data-tag="師大夜市" class="button">師大夜市</a></li>
+												<li><a href="/home/gallery/a6" data-tag="華西街夜市" class="button">華西街夜市</a></li>
+												<li><a href="/home/gallery/a7" data-tag="寧夏夜市" class="button active">寧夏夜市</a></li>
+											</ul>
+										</header>
+									<div class="inner">
+						<section class="columns double">
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A7-01.jpg' %}" width="400" height="200" ></span>
+										<h3>豬肝榮仔</h3>
+										<p>營業超過一甲子的台北寧夏夜市老攤豬肝榮仔，入選首屆米其林美食排行榜，該店販售豬肝湯、豬肚湯、綜合湯及肉粽，單純的老滋味吸引饕客光，該店推薦菜色是豬肝湯，也有顧客喜歡有豬肚、豬肝、肉羹三種種口感的綜合湯，老闆娘說，入榜是鼓勵也是壓力，會繼續努力傳承老滋味。</p>
+												<p>營業時間：18:30-01:00</p>
+												<p>地點：台北市大同區寧夏路68號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A7-02.jpg' %}" width="200" height="200" ></span>
+										<h3>知高飯</h3>
+										<p>「知高飯」和「控肉飯」很類似,只是豬肉從肥滋滋的三層肉換成較瘦的腿庫部位,吃起來有濃厚的鄉土古早味！</p>
+												<p>營業時間：18:00-	24:00</p>
+												<p>地點：台北市大同區寧夏路58號34攤</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A7-03.jpg' %}" width="200" height="200" ></span>
+										<h3>林記燒麻糬</h3>
+										<p>燒麻糬不同於一般，是從滾燙的鍋中撈起後，撒上黑芝麻、花生碎糖粉供沾食，一份有兩個，等於兩種口味一次滿足；夏天也有加入剉冰的吃法，遇冰急速冷卻的麻糬口感愈發Q彈富嚼勁。</p>
+												<p>營業時間：17:30–01:00</p>
+												<p>地點：台北市大同區寧夏路35號前 </p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A7-04.jpg' %}" width="200" height="200" ></span>
+										<h3>飄香牛肉麵</h3>
+										<p>牛肉的方面,選用的是牛腩部位,加上燉煮的火侯頗佳！喜歡吃牛肉麵的朋友們,大力推薦這家風味獨具的小吃店！</p>
+												<p>營業時間：早上11:30~14:00，16:30~23:00 週日公休</p>
+												<p>地點：台北市大同區寧夏路12號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A7-05.jpg' %}" width="200" height="200" ></span>
+										<h3>感恩東山鴨頭</h3>
+										<p>這是位於台北市寧夏夜市內的東山鴨頭,有來逛夜市的這攤為必敗美食！尤其是海帶酥軟的口感、豬血糕剛炸出來香嫩的法上一口,超級過癮啊！</p>
+												<p>營業時間：17:30~00:00</p>
+												<p>地點：台北市大同區寧夏路35-43號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A7-06.jpg' %}" width="200" height="200" ></span>
+										<h3>里長伯蚵仔麵線臭豆腐</h3>
+										<p>傳承給第二代接手的『里長伯蚵仔麵線臭豆腐』，第一代老闆真的是里長出身，無論是原料或是湯底，大多都維持手工製程，像是天然發酵的手工臭豆腐、麵線等，來上一份料多的蚵仔麵線，或是切成六小塊油炸的臭豆腐，都是老饕最愛。</p>
+												<p>營業時間：16:00-01:00</p>
+												<p>地點：台北市大同區寧夏路22之9號</p>
+									</div>
+									
+								</section>
+						</div>
+
+
+							
+						</section>
+		
+
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<!-- <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.poptrox.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/skel.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/util.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/main.js' %}"></script> -->
+
+
+	</body>
+</html>

@@ -1,0 +1,123 @@
+ {% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Snapshot by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>通化夜市</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href= "{% static 'css/main.css' %}" />
+	</head>
+	<body>
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="/home/"><span class="icon fa-home"></span></a></li>
+						<li><a href="/home/gallery" class="active"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="/home/generic"><span class="icon fa-car"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+					
+					<!-- Header -->
+						<header id="header">
+							<div><a href="http://127.0.0.1:8000/home/contact" style="color:black;">聯絡我們</a></div> 
+							<!-- 還沒改 -->
+						</header>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+
+									<!-- Filters -->
+										<header>
+											<h1>通化夜市</h1>
+											<ul class="tabs">
+												<li><a href="/home/gallery" data-tag="all" class="button">All</a></li>
+												<li><a href="/home/gallery/a1" data-tag="通化夜市" class="button active">通化夜市</a></li>
+												<li><a href="/home/gallery/a2" data-tag="士林夜市" class="button">士林夜市</a></li>
+												<li><a href="/home/gallery/a3" data-tag="737夜市" class="button">737夜市</a></li>
+												<li><a href="/home/gallery/a4" data-tag="饒河夜市" class="button">饒河夜市</a></li>
+												<li><a href="/home/gallery/a5" data-tag="師大夜市" class="button">師大夜市</a></li>
+												<li><a href="/home/gallery/a6" data-tag="華西街夜市" class="button">華西街夜市</a></li>
+												<li><a href="/home/gallery/a7" data-tag="寧夏夜市" class="button">寧夏夜市</a></li>
+											</ul>
+										</header>
+									<div class="inner">
+						<section class="columns double">
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A1-01.jpg' %}" width="400" height="200" ></span>
+										<h3>一口金酥臭豆腐</h3>
+										<p>受到各大媒體採訪，算是通化夜市裡的名店了。這家最大的特色是會將臭豆腐切成好入口的一口大小！</p>
+												<p>營業時間：04:30-24:00</p>
+												<p>地點：台北市大安區臨江街87號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A1-02.jpg' %}" width="200" height="200" ></span>
+										<h3>上海生煎包、鍋貼</h3>
+										<p>這是20年以上的老攤位，水煎包的皮很香Q有嚼勁，裡面的內餡調味超級香，不用另外加醬就很好吃了！</p>
+												<p>營業時間：16:00-24:00</p>
+												<p>地點：台北市大安區臨江街21號(臨江街基隆路口第一家)</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A1-03.jpg' %}" width="200" height="200" ></span>
+										<h3>御品元冰火湯圓</h3>
+										<p>位於巷子內的御品元最出名的就是下面是剉冰上面擺了五顆元宵的冰火湯圓！湯圓的芝麻和花生內餡都非常的香濃，外皮也很Q，現煮的熱騰騰湯元立刻放到挫冰上真的是很獨特的滋味！</p>
+												<p>營業時間：18:00–24:30</p>
+												<p>地點：台北市大安區通化街39巷50弄31號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A1-04.jpg' %}" width="200" height="200" ></span>
+										<h3>梁記滷味</h3>
+										<p>原本就是開業超過60年的老店，今年又被米其林評為推薦小吃讓他再度聲名大噪，想要吃到可得早點去排隊！</p>
+												<p>營業時間：17:50-01:30</p>
+												<p>地點：台北市大安區通化街39巷50弄</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A1-05.jpg' %}" width="200" height="200" ></span>
+										<h3>鄭家四神湯</h3>
+										<p>鄭家四神湯於1967年創立，他們家的招牌四神湯，喝起來湯頭清潤，豐富的配料更堪稱一絕，特別是豬腸子口感軟嫩，吸附著經過數小時熬煮的大骨湯汁，嚐起來沒有過於刺鼻的腥味，處理得非常之好。</p>
+												<p>營業時間：16:00–23:30</p>
+												<p>地點：台北市大安區臨江街40巷81號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A1-06.jpg' %}" width="200" height="200" ></span>
+										<h3>紅花麻辣鹹水雞</h3>
+										<p>小小的推車上，有豆皮、豆干、筊白筍、豬血糕，以及雞胗、雞心等全雞料理，食材種類有很多種，而且看起來都很新鮮，讓人食指大動。</p>
+												<p>營業時間：18:00-01:00</p>
+												<p>地點：台北市大安區臨江街99號</p>
+									</div>
+									
+								</section>
+						</div>
+
+
+							
+						</section>
+		
+
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<!-- <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.poptrox.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/skel.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/util.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/main.js' %}"></script> -->
+
+
+	</body>
+</html>

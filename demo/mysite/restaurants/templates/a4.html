@@ -1,0 +1,123 @@
+ {% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Snapshot by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>夜市介紹 </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href= "{% static 'css/main.css' %}" />
+	</head>
+	<body>
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="/home/"><span class="icon fa-home"></span></a></li>
+						<li><a href="/home/gallery" class="active"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="/home/generic"><span class="icon fa-car"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+					
+					<!-- Header -->
+						<header id="header">
+							<div><a href="http://127.0.0.1:8000/home/contact" style="color:black;">聯絡我們</a></div> 
+							<!-- 還沒改 -->
+						</header>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+
+									<!-- Filters -->
+										<header>
+											<h1>饒河夜市</h1>
+											<ul class="tabs">
+												<li><a href="/home/gallery" data-tag="all" class="button">All</a></li>
+												<li><a href="/home/gallery/a1" data-tag="通化夜市" class="button">通化夜市</a></li>
+												<li><a href="/home/gallery/a2" data-tag="士林夜市" class="button">士林夜市</a></li>
+												<li><a href="/home/gallery/a3" data-tag="737夜市" class="button">737夜市</a></li>
+												<li><a href="/home/gallery/a4" data-tag="饒河夜市" class="button active">饒河夜市</a></li>
+												<li><a href="/home/gallery/a5" data-tag="師大夜市" class="button">師大夜市</a></li>
+												<li><a href="/home/gallery/a6" data-tag="華西街夜市" class="button">華西街夜市</a></li>
+												<li><a href="/home/gallery/a7" data-tag="寧夏夜市" class="button">寧夏夜市</a></li>
+											</ul>
+										</header>
+									<div class="inner">
+						<section class="columns double">
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A4-01.jpg' %}" width="400" height="200" ></span>
+										<h3>福州世祖胡椒餅</h3>
+												<p>這家的外皮有改良過，不像傳統作法那麼厚又硬，而胡椒粉則是使用印尼進口食材，吃起來很香且帶點胡椒的微辣，不愧是大排長龍的名店。</p>
+												<p>營業時間：18:00-24:00</p>
+												<p>地點：台北市松山區饒河街249號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A4-02.jpg' %}" width="200" height="200" ></span>
+										<h3>日本福島屋圓圓燒</h3>
+										<p>這是日本人在台灣創業，圓圓燒是店家獨創的食品，由日式煎麵糊改良，類似大阪燒，只有在饒河夜市才能吃到的美食。</p>
+												<p>營業時間：17:00-24:00</p>
+												<p>地點：台北市松山區饒河街夜市中段</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A4-03.jpg' %}" width="200" height="200" ></span>
+										<h3>師老闆臭豆腐</h3>
+										<p>施老闆麻辣臭豆腐正是米其林推薦店家之一，也是饒河夜市老字號的美食，，難怪各大美食網推薦前往。</p>
+												<p>營業時間：17:00-24:00</p>
+												<p>地點：台北市松山區饒河街189號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A4-04.jpg' %}" width="200" height="200" ></span>
+										<h3>陳董藥燉排骨</h3>
+										<p>他的招牌排骨湯以大量豬肋骨和中藥材燉煮，清香醇喉，味道甘甜，喝後身體立時變得暖和，因此也被米其林推薦店家之一。</p>
+												<p>營業時間：15:30-24:30</p>
+												<p>地點：台北市八德路四段739號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A4-05.jpg' %}" width="200" height="200" ></span>
+										<h3>東發號麵線油飯肉羹</h3>
+										<p>沒有大招牌與醒目店面攬客，一間躲藏在土地公廟旁、開業超過80年的老字號，東發號是饒河街觀光夜市的經典老店，裡頭日復一日地新鮮製作古早味三款小吃，沒有勾芡的清湯蚵仔麵線，搭檔油飯及肉羹，清甜滋味突顯出踏實的美好。</p>
+												<p>營業時間：08:30–24:00</p>
+												<p>地點：台北市松山區饒河街94號</p>
+									</div>
+									<div class="column">
+										<span class="image left special"><img src="{% static 'images/pictures/A4-06.jpg' %}" width="200" height="200" ></span>
+										<h3>加賀魷魚大王</h3>
+										<p>現燙的魷魚吃起來很厚但是又不會乾硬，略帶一點脆但是又有汁，給人的口感很不錯，難怪經過都會大排長龍。</p>
+												<p>營業時間：17:00-00:30</p>
+												<p>地點：台北市松山區饒河街120號</p>
+									</div>
+									
+								</section>
+						</div>
+
+
+							
+						</section>
+		
+
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<!-- <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.poptrox.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/skel.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/util.js' %}"></script>
+			<script type="text/javascript" src="{% static 'js/main.js' %}"></script> -->
+
+
+	</body>
+</html>
